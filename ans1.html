@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>function.com</title>
+       <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+      <div class="container">
+      <h3>Q!: In how many types can we create functions? State the difference between those types by giving examples</h3>
+      <p>There are mejor 4 types of Function creation in Javascript</p>
+    <ul>
+          <li><h2>1.Function Declarations</h2></li>
+          <li> <h2>2.Function Expressions</h2> </li>
+          <li> <h2>3.Anonymous Functions</h2> </li>
+          <li><h2>4.Immediately Invoked Finction(IIFE)</h2></li>
+      
+    </ul>
+    <h2>Difference</h2>
+    <h3>1.Function Declaration</h3>
+    <p>JavaScript functions are defined with the function keyword. You can use a function declaration or a function expression.</p>
+    <pre>
+          Example:-
+          function display(){  //Function Declaratioin
+            // Function Body
+        }display() //calling function
+    </pre>
+    <h3>2.Function Expressioin</h3>
+    <p>The function keyword can be used to define a function inside an expression.</p>
+    <pre>
+          Example:-
+          var display = function nameOptional(){
+
+                  };
+    </pre>
+    <h3>3.Anonymous Function/Arrow Function</h3>
+    <p>Anonymous fnction allow the creatin of function whiich have noi specified name.</p>
+
+      <p>ES6 introduced arrow function expression that provides a shorthand for declaring anonymous functions:</p>
+      <pre>
+            Example:-
+            let x = () => console.log('Anonymous function');
+    <h3>4.IIFE FUNCTION</h3>
+    <p>If you want to create a function and execute it immediately after the declaration, you can declare an anonymous function like this:</p>
+    <pre>
+          Example:-
+          let x = (function () {console.log('Heyy');});x();
+    </pre>
+
+    
+</div>   
+</body>
+</html>

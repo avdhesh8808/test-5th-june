@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptS</title>
+</head>
+<body>
+    <h2>Q3:   Write a program to display the n terms of odd natural number and their sum.</h2>
+
+    <h1>Click This Button <button onclick="myFun()">Click me</button></h1>
+
+    <p id="output"></p>
+
+    
+    <script>
+        function myFun()
+        {
+            let num = prompt("Enter Any number : ");
+
+            let sum = 0;
+            let text = "";
+            if(num != null)
+            {
+                for(let i=1; i<=num; i++)
+                {
+                    if(i%2 != 0)
+                    {
+                        sum += i;
+                        text += i + "+";
+                    }
+                }
+                document.getElementById("output").innerHTML = text + " = " + sum;
+            }
+            else
+            {
+                document.getElementById("output").innerHTML = "Sorry Empty value not allow :(";
+            }
+        }
+
+
+    </script>
+</body>
+</html>

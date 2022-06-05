@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>Q4:WAP to print Nth prime number.(Input: 5, Output: 11, since 11 is the 5th prime number)</h2>
+
+    <h1>Click This Button <button onclick="myFun()">Click me</button></h1>
+
+    <p id="output"></p>
+
+    
+    <script>
+        function myFun()
+        {
+            let num = prompt("Enter Any number : ");
+
+            let prime = 0;
+            let text = "";
+
+            if(num != null)
+            {
+                let n = num;
+                let count = 0;
+                let index = 0;
+                for(let i =2; i<num;i++)
+                {
+                    num++;
+
+                    let j =0;
+                    for(j =2; j<=i;j++)
+                    {
+                        if(i%j == 0)
+                            break;
+                    }
+                    if(j == i)
+                    {
+                        count = j;
+                        index++;
+                    }
+                    if(index == n)
+                        break;
+                }
+                document.getElementById("output").innerHTML = count;
+            }
+            else
+            {
+                document.getElementById("output").innerHTML = "Sorry Empty value not allow :(";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
